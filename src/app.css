@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+ html,body,#root{
+    height: 100%;
+    width: 100%;
+}  
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes blobMove {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(10px, -10px) scale(1.05);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.blob-animate {
+  animation: blobMove 6s infinite ease-in-out;
+}
+
+
+
+.pac-scene {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pac-body {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.half {
+  position: absolute;
+  width: 72px;
+  height: 36px;
+  background: #f5c800;
+  left: 0;
+}
+
+.half-top {
+  top: 0;
+  border-radius: 36px 36px 0 0;
+  transform-origin: 50% 100%;
+  animation: open-top 0.4s ease-in-out infinite alternate;
+}
+
+.half-bottom {
+  top: 36px;
+  border-radius: 0 0 36px 36px;
+  transform-origin: 50% 0%;
+  animation: open-bottom 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes open-top {
+  0%   { transform: rotate(-5deg); }
+  100% { transform: rotate(-40deg); }
+}
+
+@keyframes open-bottom {
+  0%   { transform: rotate(5deg); }
+  100% { transform: rotate(40deg); }
+}
+
+.track-outer {
+  flex: 1;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  -webkit-mask-image: linear-gradient(to right, transparent 0px, black 72px);
+  mask-image: linear-gradient(to right, transparent 0px, black 72px);
+}
+
+.belt {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  animation: march 15s linear infinite;
+  will-change: transform;
+}
+
+@keyframes march {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 7px;
+  border-radius: 999px;
+  border: 1px solid #333;
+  background: #242424;
+  font-size: 10px;
+  font-weight: 500;
+  color: #e0e0e0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
