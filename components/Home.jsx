@@ -5,16 +5,22 @@ import darkContext from '../context/darkContext'
 const  Home = () => {
 
     const {myStyle} = useContext(darkContext)
+    
+    const scrollHandler = (id) => {
+        document.getElementById(id).scrollIntoView({
+            behavior:'smooth'
+        })
 
+    }
     return <div id='Home' className="w-full flex flex-col min-h-screen " style={myStyle}>
                 <Navbar/>
                 <div className='flex h-96 bg-olive-400' style={myStyle}>
                     <div className='sidebar ml-[15vw] fixed top-12 w-[7vw] z-20 text-sm border border-blue-600'>
                         <div className='mt-30 '>
-                            <p>Home</p>
-                            <p>About</p>
-                            <p>Project</p>
-                            <p>Contact</p>                     
+                            <p onClick={() => scrollHandler('Home')}  className='cursor-pointer'>Home</p>
+                            <p onClick={() => scrollHandler('About')} className='cursor-pointer'>About</p>
+                            <p onClick={() => scrollHandler('Project')} className='cursor-pointer'>Project</p>
+                            <p onClick={() => scrollHandler('Contact')} className='cursor-pointer'>Contact</p>                     
                         </div>
                     </div>
                     

@@ -12,7 +12,7 @@ const Contact = () => {
   }
 
   return (
-    <div id='Contact' className='w-full h-96  mt-7 bg-emerald-300' style={myStyle}> 
+    <div id='Contact' className='scroll-mt-16 w-full h-96  mt-7 bg-emerald-300' style={myStyle}> 
         <div className='ml-[25vw] h-96 mr-[15vw] flex flex-col  border border-blue-500 '>
           <h1 className='text-xl'>Based in India</h1>
           <div className='  rounded   border-orange-500   '>

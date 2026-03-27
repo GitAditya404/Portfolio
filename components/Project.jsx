@@ -6,7 +6,7 @@ const Project = () => {
   const {myStyle} = useContext(darkContext)
   
   return (
-    <div id='Project' style={myStyle}>
+    <div id='Project' style={myStyle} className='scroll-mt-16'>
         <div className=' min-h-screen ml-[25vw]  mt-4 mr-[15vw] bg-blue-500' style={myStyle}>
             <h1 className='underline text-xl'>Projects</h1>
             <div className='border flex border-black h-44 w-[50vw] mt-6'>
