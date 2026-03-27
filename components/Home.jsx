@@ -1,10 +1,15 @@
+import { useContext } from 'react'
 import Navbar from './Navbar'
+import darkContext from '../context/darkContext'
 
 const  Home = () => {
-    return <div className="w-full flex flex-col">
+
+    const {myStyle} = useContext(darkContext)
+
+    return <div id='Home' className="w-full flex flex-col min-h-screen " style={myStyle}>
                 <Navbar/>
-                <div className='flex h-96 bg-olive-400'>
-                    <div className='sidebar ml-[15vw] fixed top-12  bg-amber-400 w-[7vw]  text-sm border border-blue-600'>
+                <div className='flex h-96 bg-olive-400' style={myStyle}>
+                    <div className='sidebar ml-[15vw] fixed top-12 w-[7vw] z-20 text-sm border border-blue-600'>
                         <div className='mt-30 '>
                             <p>Home</p>
                             <p>About</p>
@@ -59,7 +64,7 @@ const  Home = () => {
                 </div>
 
                 {/* pacman */}
-                    <div className="pac-scene h-screen">
+                    <div className="pac-scene h-screen  z-0" style={myStyle}>
 
                         <div className="pac-body ml-[22vw]">
                             <div className="half half-top"></div>

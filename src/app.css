@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  background-color: black;
 }
 
 @keyframes blobMove {
@@ -111,4 +112,10 @@ body{
   flex-shrink: 0;
 }
 
+
+  .dark .tag {       
+  background: #e0e0e0;
+  color: #111;
+  border: 1px solid #aaa;
+}
 
