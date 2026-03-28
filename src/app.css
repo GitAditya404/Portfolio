@@ -33,7 +33,13 @@ body{
   width: 100%;
 }
 
+.light-line::after {
+  background: black;
+}
 
+.dark-line::after {
+  background: white;
+}
 
 
 

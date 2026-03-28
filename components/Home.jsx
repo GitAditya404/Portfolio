@@ -13,17 +13,19 @@ const  Home = () => {
         document.getElementById(id).scrollIntoView({
             behavior:'smooth'
         })
-
     }
+
+    const isDark = myStyle.backgroundColor === 'black'
+
     return <div id='Home' className="w-full flex flex-col min-h-screen " style={myStyle}>
                 <Navbar/>
                 <div className='flex h-96 bg-olive-400' style={myStyle}>
                     <div className='sidebar ml-[15vw] fixed top-12 w-[7vw] z-20 text-sm border border-blue-600'>
                         <div className='mt-30 mr-2'>
-                            <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active' : ''}`}>Home</p>
-                            <p onClick={() => scrollHandler('About')} className={`nav-item ${active === 'About' ? 'active' : ''}`}>About</p>
-                            <p onClick={() => scrollHandler('Project')} className={`nav-item ${active === 'Project' ? 'active' : ''}`}>Project</p>
-                            <p onClick={() => scrollHandler('Contact')} className={`nav-item ${active === 'Contact' ? 'active' : ''}`}>Contact</p>                     
+                            <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active ' : ''} ${isDark ? 'dark-line' : 'light-line'}`} >Home</p>
+                            <p onClick={() => scrollHandler('About')} className={`nav-item ${active === 'About' ? 'active' : ''} ${isDark ? 'dark-line' : 'light-line'}`}>About</p>
+                            <p onClick={() => scrollHandler('Project')} className={`nav-item ${active === 'Project' ? 'active' : ''} ${isDark ? 'dark-line' : 'light-line'}`}>Project</p>
+                            <p onClick={() => scrollHandler('Contact')} className={`nav-item ${active === 'Contact' ? 'active' : ''} ${isDark ? 'dark-line' : 'light-line'}`}>Contact</p>                     
                         </div>
                     </div>
                     
