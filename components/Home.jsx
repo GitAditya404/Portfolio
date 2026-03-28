@@ -1,12 +1,15 @@
 import { useContext } from 'react'
 import Navbar from './Navbar'
 import darkContext from '../context/darkContext'
+import { useState } from 'react'
 
 const  Home = () => {
 
     const {myStyle} = useContext(darkContext)
-    
+    const [active, setActive] = useState('Home');
+
     const scrollHandler = (id) => {
+        setActive(id)
         document.getElementById(id).scrollIntoView({
             behavior:'smooth'
         })
@@ -16,11 +19,11 @@ const  Home = () => {
                 <Navbar/>
                 <div className='flex h-96 bg-olive-400' style={myStyle}>
                     <div className='sidebar ml-[15vw] fixed top-12 w-[7vw] z-20 text-sm border border-blue-600'>
-                        <div className='mt-30 '>
-                            <p onClick={() => scrollHandler('Home')}  className='cursor-pointer'>Home</p>
-                            <p onClick={() => scrollHandler('About')} className='cursor-pointer'>About</p>
-                            <p onClick={() => scrollHandler('Project')} className='cursor-pointer'>Project</p>
-                            <p onClick={() => scrollHandler('Contact')} className='cursor-pointer'>Contact</p>                     
+                        <div className='mt-30 mr-2'>
+                            <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active' : ''}`}>Home</p>
+                            <p onClick={() => scrollHandler('About')} className={`nav-item ${active === 'About' ? 'active' : ''}`}>About</p>
+                            <p onClick={() => scrollHandler('Project')} className={`nav-item ${active === 'Project' ? 'active' : ''}`}>Project</p>
+                            <p onClick={() => scrollHandler('Contact')} className={`nav-item ${active === 'Contact' ? 'active' : ''}`}>Contact</p>                     
                         </div>
                     </div>
                     

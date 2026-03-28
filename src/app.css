@@ -10,6 +10,33 @@ body{
   background-color: black;
 }
 
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  opacity: 0.6;
+  transition: width 0.3s ease;
+}
+
+/*  active state */
+.nav-item.active::after {
+  width: 100%;
+}
+
+
+
+
+
 @keyframes blobMove {
   0% {
     transform: translate(0px, 0px) scale(1);
