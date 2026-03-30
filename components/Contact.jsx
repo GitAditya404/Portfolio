@@ -15,10 +15,11 @@ const Contact = () => {
     <div id='Contact' className='scroll-mt-16 w-full h-96  mt-7 bg-emerald-300' style={myStyle}> 
         <div className='ml-[25vw] h-96 mr-[15vw] flex flex-col  border border-blue-500 '>
           <h1 className='text-xl'>Based in India</h1>
-          <div className='  rounded   border-orange-500   '>
+
+          <div className=' rounded-2xl overflow-hidden p-4  mt-3' style={contactSyle}>
               
-              <div className='TEXTDIV text-xs rounded  border gap-2.5 flex flex-col border-blue-50.0 mt-3'>
-                  <p className='underline text-sm' style={contactSyle}>Let's Connect</p>
+              <div className='TEXTDIV text-xs rounded-2xl gap-2.5 flex flex-col  '>
+                  <p className ='underline text-sm' style={contactSyle}>Let's Connect</p>
                   
                   <div className='flex justify-between border-b border-gray-400 py-2' style={contactSyle}>
                     <p className=''>Email</p>
@@ -27,7 +28,7 @@ const Contact = () => {
 
                   <div className='flex justify-between border-b border-gray-400 py-2' style={contactSyle}>
                     <p className='' >LinkedIn</p>
-                    <a href="www.linkedin.com/in/aditya-kumar-412877292">www.linkedin.com/in/aditya-kumar-412877292</a>
+                    <a href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>www.linkedin.com/in/aditya-kumar-412877292</a>
                   </div>
 
                   <div className='flex justify-between border-b border-gray-400 py-2' style={contactSyle}>
