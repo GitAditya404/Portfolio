@@ -32,7 +32,6 @@ const  Home = () => {
         };
     }, []);
 
-
     const scrollHandler = (id) => {
         setActive(id)
         document.getElementById(id).scrollIntoView({
@@ -44,11 +43,10 @@ const  Home = () => {
 
     return <div id='Home' className="w-full flex flex-col min-h-screen" style={myStyle}>
                 <Navbar/>
-                <div className='flex h-96 bg-olive-400' style={myStyle}>
-                    <div className='sidebar ml-[15vw] fixed top-12 w-[7vw] z-20 text-sm border border-blue-600'>
-                        <div className='mt-30 mr-2'>
+                <div className='flex h-96 border-4' style={myStyle}>
+                    <div className={`sidebar hidden sm:block pt-5 pb-5 px-5 rounded-xl ml-[12vw] mt-24 fixed top-12  z-20 text-sm  ${isDark ? 'bg-[#130f40]' : 'bg-[#F1F5F9]'} `}  >
+                        <div>
                             <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active ' : ''} ${isDark ? 'dark-line' : 'light-line'}`} >Home</p>
-                            
                             <p onClick={() => scrollHandler('Project')} className={`nav-item ${active === 'Project' ? 'active' : ''} ${isDark ? 'dark-line' : 'light-line'}`}>Project</p>
                             <p onClick={() => scrollHandler('Contact')} className={`nav-item ${active === 'Contact' ? 'active' : ''} ${isDark ? 'dark-line' : 'light-line'}`}>Contact</p>                     
                         </div>
@@ -84,7 +82,7 @@ const  Home = () => {
                     </div>
 
                     {/*Blob and image*/}
-                    <div className='border w-[30vw] border-red-600'>  
+                    <div className='border-4 w-[30vw] border-red-600'>  
 
                                 {/* <svg
                                     viewBox="0 0 200 200"
@@ -96,7 +94,7 @@ const  Home = () => {
                                     transform="translate(60 110)"
                                     />
                                 </svg> */}
-
+                                <div className='border border-blue-700 mt-12 rounded-full w-4 h-5'></div>
                                 {/*Image */}
                                 <img
                                     src="../src/yourimage.png"
@@ -115,23 +113,21 @@ const  Home = () => {
 
                         <div className="track-outer">
                         <div className="belt">
-                            <span className="tag text-xs">HTML</span>
-                            <span className="tag">CSS</span>
+                            <span className="tag text-xs">TailwindCss</span>
                             <span className="tag">JavaScript</span>
                             <span className="tag">React</span>
-                            <span className="tag">TypeScript</span>
+                            <span className="tag">Express</span>
                             <span className="tag">Node.js</span>
-                            <span className="tag">Figma</span>
+                            <span className="tag">MongoDb</span>
                             <span className="tag">Git</span>
 
                             {/* duplicate for infinite loop */}
-                            <span className="tag text-xs">HTML</span>
-                            <span className="tag">CSS</span>
+                            <span className="tag text-xs">TailwindCss</span>
                             <span className="tag">JavaScript</span>
                             <span className="tag">React</span>
-                            <span className="tag">TypeScript</span>
+                            <span className="tag">Express</span>
                             <span className="tag">Node.js</span>
-                            <span className="tag">Figma</span>
+                            <span className="tag">MongoDb</span>
                             <span className="tag">Git</span>
                         </div>
                         </div>               
