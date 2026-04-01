@@ -100,7 +100,7 @@ const  Home = () => {
                                 {/*Image */}
                                 <img
                                     src="../src/yourimage.png"
-                                    className="w-25 z-10 mt-14 ml-10 "
+                                    className="w-25 z-10 mt-14 ml-8"
                                 />                           
                     </div>
                 </div>
