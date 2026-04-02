@@ -43,7 +43,7 @@ const  Home = () => {
 
     return <div id='Home' className="w-full flex flex-col min-h-screen" style={myStyle}>
                 <Navbar/>
-                <div className='flex h-96 border-4' style={myStyle}>
+                <div className='flex flex-col sm:h-screen sm:flex-row border' style={myStyle}>
                     <div className={`sidebar hidden sm:block pt-5 pb-5 px-5 rounded-xl ml-[12vw] mt-24 fixed top-12  z-20 text-sm  ${isDark ? 'bg-[#130f40]' : 'bg-[#F1F5F9]'} `}  >
                         <div>
                             <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active ' : ''} ${isDark ? 'dark-line' : 'light-line'}`} >Home</p>
@@ -52,23 +52,22 @@ const  Home = () => {
                         </div>
                     </div>
                     
-
-                    <div className='DETAIL ml-[25vw] border w-[45vw] border-red-600'>
-                        <div className='mt-25'>
-                        <p className='text-xl'>Aditya Kumar </p>
-                        <p className='text-xs tracking-tighter'>Full Stack Developer </p>
-                        <br/>
-                        <p className='text-xs'> I like being the person who turns ideas into outcomes.
-                        <br/>
-                        <br/>
-                            I'm a full-stack developer skilled in the MERN stack, with a strong eye for clean UI. I'm comfortable working across the entire stack — from building responsive frontends to designing RESTful APIs.
-                        <br/>
-                        <br/>
-                          I use Git and GitHub for version control and also know little bit Docker .
-                        </p>
+                    <div className='DETAIL order-2 mt-16 sm:mt-0 sm:order-1 ml-[25vw] border w-[45vw] border-red-600'>
+                        <div className=' sm:mt-25'>
+                            <p className='text-xl'>Aditya Kumar </p>
+                            <p className='text-xs tracking-tighter'>Full Stack Developer </p>
+                            <br/>
+                            <p className='text-xs'> I like being the person who turns ideas into outcomes.
+                            <br/>
+                            <br/>
+                                I'm a full-stack developer skilled in the MERN stack, with a strong eye for clean UI. I'm comfortable working across the entire stack — from building responsive frontends to designing RESTful APIs.
+                            <br/>
+                            <br/>
+                            I use Git and GitHub for version control and also know little bit Docker .
+                            </p>
 
                         </div>
-                        <div className='flex mt-4 gap-3 '>
+                        <div className='flex mt-6 gap-3 '>
                             <a href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>
                                 <img className={`size-4 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/linkedin-square.png" alt="" /> 
                             </a>
@@ -81,25 +80,17 @@ const  Home = () => {
 
                     </div>
 
-                    {/*Blob and image*/}
-                    <div className='border-4 w-[30vw] border-red-600'>  
+                    {/* Image container*/}
+                    <div className='order-1 items-center mt-36 ml-20 sm:ml-0 sm:mt-0 sm:order-2 flex border-2 w-[60vw] sm:w-[30vw] border-red-600'>  
 
-                                {/* <svg
-                                    viewBox="0 0 200 200"
-                                    className="absolute z-10 w-56 h-56 blob-animate"
-                                >
-                                    <path
-                                    fill="#6F8591"
-                                    d="M50.4,-42.6C66.9,-33.8,83.1,-16.9,85.1,2C87.2,21,75,41.9,58.5,57.9C41.9,74,21,85.1,3.9,81.2C-13.2,77.3,-26.4,58.4,-34.1,42.4C-41.8,26.4,-44.1,13.2,-48.6,-4.6C-53.2,-22.4,-60.2,-44.7,-52.4,-53.5C-44.7,-62.3,-22.4,-57.6,-2.7,-54.9C16.9,-52.1,33.8,-51.4,50.4,-42.6Z"
-                                    transform="translate(60 110)"
-                                    />
-                                </svg> */}
-                                <div className='border border-blue-700 mt-12 rounded-full w-4 h-5'></div>
-                                {/*Image */}
+                                <div className='overflow-hidden sm:ml-8 bg-red-400 border border-blue-700 mt- rounded-full size-56 sm:size-36'>
+                                {/*My image */}
                                 <img
                                     src="../src/yourimage.png"
-                                    className="w-25 z-10 mt-14 ml-8"
-                                />                           
+                                    className="w-40 ml-9 mt-8 sm:w-25 z-10 sm:ml-5 sm:mt-6 "
+                                /> 
+                                </div>
+                          
                     </div>
                 </div>
 
