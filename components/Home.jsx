@@ -44,7 +44,7 @@ const  Home = () => {
     return <div id='Home' className="w-full flex flex-col min-h-screen" style={myStyle}>
                 <Navbar/>
                 <div className='flex flex-col sm:h-screen sm:flex-row border' style={myStyle}>
-                    <div className={`sidebar hidden sm:block pt-5 pb-5 px-5 rounded-xl ml-[12vw] mt-24 fixed top-12  z-20 text-sm  ${isDark ? 'bg-[#130f40]' : 'bg-[#F1F5F9]'} `}  >
+                    <div className={`sidebar hidden sm:block pt-11 pb-11 px-10 rounded-xl ml-[10vw] fixed top-59  z-20 text-2xl  ${isDark ? 'bg-[#130f40]' : 'bg-[#F1F5F9]'} `}  >
                         <div>
                             <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active ' : ''} ${isDark ? 'dark-line' : 'light-line'}`} >Home</p>
                             <p onClick={() => scrollHandler('Project')} className={`nav-item ${active === 'Project' ? 'active' : ''} ${isDark ? 'dark-line' : 'light-line'}`}>Project</p>
@@ -52,28 +52,30 @@ const  Home = () => {
                         </div>
                     </div>
                     
-                    <div className='DETAIL order-2 mt-16 sm:mt-0 sm:order-1 ml-[25vw] border w-[45vw] border-red-600'>
-                        <div className=' sm:mt-25'>
-                            <p className='text-xl'>Aditya Kumar </p>
-                            <p className='text-xs tracking-tighter'>Full Stack Developer </p>
-                            <br/>
-                            <p className='text-xs'> I like being the person who turns ideas into outcomes.
+                    <div className='DETAIL order-2 mt-12 sm:mt-0 sm:order-1  ml-6 sm:ml-[25vw]  w-[90vw] sm:w-[45vw] border-red-600'>
+                        <div className=' sm:mt-44'>
+                            <p className='text-4xl sm:text-4xl ml-17 sm:ml-0'>Aditya Kumar </p>
+                            <p className='text-lg sm:text-xl tracking-tighter ml-24 sm:ml-0'>Full Stack Developer </p>
                             <br/>
                             <br/>
-                                I'm a full-stack developer skilled in the MERN stack, with a strong eye for clean UI. I'm comfortable working across the entire stack — from building responsive frontends to designing RESTful APIs.
+                            <p className='text-xl'> I like being the person who turns ideas into outcomes.
+                            <br/>
+                            <br/>
+                                I'm a full-stack developer skilled in the MERN stack, with a strong eye for clean UI. I'm comfortable working across the entire stack , from building responsive frontends to designing RESTful APIs.
                             <br/>
                             <br/>
                             I use Git and GitHub for version control and also know little bit Docker .
                             </p>
+                            <br/>
 
                         </div>
-                        <div className='flex mt-6 gap-3 '>
+                        <div className='flex mt-6 gap-8 ml-28 sm:ml-0 '>
                             <a href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>
-                                <img className={`size-4 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/linkedin-square.png" alt="" /> 
+                                <img className={`size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/linkedin-square.png" alt="" /> 
                             </a>
 
                             <a href="https://github.com/GitAditya404" target='_blank'>
-                                <img className={`size-4 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/github.png" alt="" />
+                                <img className={`size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/github.png" alt="" />
                             </a>
 
                         </div>
@@ -81,13 +83,13 @@ const  Home = () => {
                     </div>
 
                     {/* Image container*/}
-                    <div className='order-1 items-center mt-36 ml-20 sm:ml-0 sm:mt-0 sm:order-2 flex border-2 w-[60vw] sm:w-[30vw] border-red-600'>  
+                    <div className='order-1 items-center mt-36 ml-20 sm:ml-0 sm:mt-0 sm:order-2 flex  w-[60vw] sm:w-[30vw] border-red-600'>  
 
-                                <div className='overflow-hidden sm:ml-8 bg-red-400 border border-blue-700 mt- rounded-full size-56 sm:size-36'>
+                                <div className='overflow-hidden sm:ml-8 bg-red-400 border border-blue-700 mt- rounded-full size-56 sm:size-72'>
                                 {/*My image */}
                                 <img
-                                    src="../src/yourimage.png"
-                                    className="w-40 ml-9 mt-8 sm:w-25 z-10 sm:ml-5 sm:mt-6 "
+                                    src="../src/yourimage.png" 
+                                    className="w-40 ml-9 mt-8 sm:w-50 z-10 sm:ml-11 sm:mt-10 "
                                 /> 
                                 </div>
                           
