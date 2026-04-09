@@ -5,6 +5,7 @@ import About from '../components/About'
 import Project from '../components/Project'
 import darkContext from '../context/darkContext'
 
+
 function App() {
 
   const [myStyle, setMyStyle] = useState({
@@ -19,6 +20,7 @@ function App() {
     }}>
       <div className='w-full h-full'>
           <Home/>
+          <About/>
           <Project/>
           <Contact/>
       </div>
