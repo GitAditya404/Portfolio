@@ -28,14 +28,22 @@ const Contact = () => {
                     <p className='text-xl'>aditya.work404@gmail.com</p>
                   </div>
 
-                  <div className='sm:flex justify-between border-b border-gray-400 py-4' style={contactSyle}>
+                  <div className='sm:flex  border-b border-gray-400 py-4' style={contactSyle}>
                     <p className='text-xl font-semibold' >LinkedIn</p>
-                    <a className='text-xl' href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>www.linkedin.com/in/aditya-kumar-412877292</a>
+                    <div className='flex sm:flex-none sm:ml-auto'>
+                      <a className='text-xl ml-auto' href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>www.linkedin.com/in/aditya-kumar-412877292</a>
+                      <img className='size-7' src="../src/arrow.png" alt="" />
+                    </div>
+
                   </div>
 
-                  <div className='sm:flex justify-between border-b border-gray-400 py-5' style={contactSyle}>
+                  <div className='sm:flex border-b border-gray-400 py-5' style={contactSyle}>
                     <p className='text-xl font-semibold'>Github</p>
-                    <a className='text-xl' href="https://github.com/GitAditya404">https://github.com/GitAditya404</a>
+                    <div className='flex sm:flex-none sm:ml-auto'>
+                      <a className='text-xl ml-auto' href="https://github.com/GitAditya404">https://github.com/GitAditya404</a>
+                      <img className='size-7' src="../src/arrow.png" alt="" />
+                    </div>
+
                   </div>
               </div>
           </div>
