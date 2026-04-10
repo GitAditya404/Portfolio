@@ -7,9 +7,19 @@ const About = () => {
 
   return (
     <div id='About' className='sm:h-screen ml-6 mt-24 sm:mt-0 sm:ml-[25vw] scroll-mt-20 sm:mr-76 ' style={myStyle}>
-        <h1 className='underline decoration-wavy text-4xl'>About Me</h1>
-        <div className=' text-center '>
-        <p className='text-2xl mt-9 underline'>Skills</p>
+        <h1 className='underline decoration-wavy text-3xl'>About Me</h1>
+        <div className=' mt-7'>
+            <p className='text-xl'>I am a Computer Science undergraduate currently in my pre-final year, based in Dehradun, India.</p>
+            <br/>
+            <p className='text-xl'>
+              Along with MERN stack I have a solid foundation in programming languages such as C and C++.
+              <br/>
+              I am a tech enthusiast with a strong curiosity about how things work behind the scene.
+             </p>
+        </div>
+
+        <div className=' text-center mt-9 '>
+        <p className='text-2xl  underline'>Skills</p>
         </div>
         <div className='grid grid-cols-1  mt-8 sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[150px] '>
               <div className="border border-[#320273] rounded-2xl flex flex-col items-center justify-center">    

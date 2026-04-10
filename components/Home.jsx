@@ -43,7 +43,7 @@ const  Home = () => {
 
     return <div id='Home' className="w-full flex flex-col min-h-screen" style={myStyle}>
                 <Navbar/>
-                <div className='flex flex-col sm:h-screen sm:flex-row border' style={myStyle}>
+                <div className='flex flex-col sm:h-screen sm:flex-row ' style={myStyle}>
                     <div className={`sidebar hidden sm:block pt-11 pb-11 px-10 rounded-xl ml-[10vw] fixed top-59  z-20 text-2xl  ${isDark ? 'bg-[#130f40]' : 'bg-[#F1F5F9]'} `}  >
                         <div>
                             <p onClick={() => scrollHandler('Home')}  className={`nav-item ${active === 'Home' ? 'active ' : ''} ${isDark ? 'dark-line' : 'light-line'}`} >Home</p>
@@ -65,7 +65,7 @@ const  Home = () => {
                                 I'm a full-stack developer skilled in the MERN stack, with a strong eye for clean UI. I'm comfortable working across the entire stack , from building responsive frontends to designing RESTful APIs.
                             <br/>
                             <br/>
-                            I use Git and GitHub for version control and also know little bit Docker .
+                            I use Git and GitHub for version control .
                             </p>
                             <br/>
 
