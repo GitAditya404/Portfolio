@@ -32,7 +32,7 @@ const Contact = () => {
                     <p className='text-xl font-semibold' >LinkedIn</p>
                     <div className='flex sm:flex-none sm:ml-auto'>
                       <a className='text-xl ml-auto' href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>www.linkedin.com/in/aditya-kumar-412877292</a>
-                      <img className='size-7' src="../src/arrow.png" alt="" />
+                      <img className='size-7' src="/arrow.png" alt="" />
                     </div>
 
                   </div>
@@ -41,7 +41,7 @@ const Contact = () => {
                     <p className='text-xl font-semibold'>Github</p>
                     <div className='flex sm:flex-none sm:ml-auto'>
                       <a className='text-xl ml-auto' href="https://github.com/GitAditya404">https://github.com/GitAditya404</a>
-                      <img className='size-7' src="../src/arrow.png" alt="" />
+                      <img className='size-7' src="/arrow.png" alt="" />
                     </div>
 
                   </div>
