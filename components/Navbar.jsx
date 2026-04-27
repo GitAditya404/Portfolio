@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
 
             <div className=''>
-              <img onClick={toggleHandler} className={`ml-[55vw] size-6 sm:size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src={`${isDark ? '../src/day.png': '../src/moon.png' }`} alt="" />
+              <img onClick={toggleHandler} className={`ml-[55vw] size-6 sm:size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src={`${isDark ? '/day.png': '/moon.png' }`} alt="" />
            </div>
         </div>
       </div>

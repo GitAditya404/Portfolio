@@ -72,11 +72,11 @@ const  Home = () => {
                         </div>
                         <div className='flex mt-6 gap-8 ml-28 sm:ml-0 '>
                             <a href="https://www.linkedin.com/in/aditya-kumar-412877292" target='_blank'>
-                                <img className={`size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/linkedin-square.png" alt="" /> 
+                                <img className={`size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="/linkedin-square.png" alt="" /> 
                             </a>
 
                             <a href="https://github.com/GitAditya404" target='_blank'>
-                                <img className={`size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="../src/github.png" alt="" />
+                                <img className={`size-8 cursor-pointer ${isDark ? 'invert brightness-200' : ''}`} src="/github.png" alt="" />
                             </a>
 
                         </div>
@@ -89,7 +89,7 @@ const  Home = () => {
                                 <div className='overflow-hidden sm:ml-8 bg-red-400 border border-blue-700 mt- rounded-full size-56 sm:size-72'>
                                 {/*My image */}
                                 <img
-                                    src="../src/yourimage.png" 
+                                    src="/yourimage.png" 
                                     className="w-40 ml-9 mt-8 sm:w-50 z-10 sm:ml-11 sm:mt-10 "
                                 /> 
                                 </div>                          

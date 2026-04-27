@@ -59,7 +59,7 @@ return (
 
               <a href="https://chat-frontend-ivory-eta.vercel.app/" className='flex items-center gap-2 hover:underline'>
                 Live Demo
-                <img className='w-5 h-5 invert' src="../src/arrow.png" alt="" />
+                <img className='w-5 h-5 invert' src="/arrow.png" alt="" />
               </a>
 
             </div>
