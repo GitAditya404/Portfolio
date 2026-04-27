@@ -7,16 +7,16 @@ const Contact = () => {
   const isDark = myStyle.backgroundColor ==='black'
 
   const contactSyle = {
-    backgroundColor : isDark ? '#292524' : 'white',
+    backgroundColor : isDark ? '#292524' : '#f1f2f6',
     color : isDark ? 'white' : 'black'
   }
 
   return (
-    <div id='Contact' className='scroll-mt-20 mt-20' style={myStyle}> 
-        <div className='ml-6 sm:ml-[25vw]  mr-5  border-red-600 sm:mr-80 flex flex-col  '>
+    <div id='Contact' className=' scroll-mt-20 mt-20' style={myStyle}> 
+        <div className='ml-6 sm:ml-[25vw]  mr-5  sm:mr-80 flex flex-col  '>
           <h1 className='text-3xl sm:text-4xl underline'>Based in India</h1>
 
-          <div className=' rounded-2xl border overflow-hidden p-4  mt-7' style={contactSyle}>
+          <div className=' rounded-2xl  overflow-hidden p-4  mt-7' style={contactSyle}>
               
               <div className='TEXTDIV text-xs rounded-2xl gap-6 flex flex-col '>
                   <div className='text-center'>
@@ -47,9 +47,24 @@ const Contact = () => {
                   </div>
               </div>
           </div>
-          <div className=' overflow-hidden  border-amber-500 mt-7'>
+          {/* <div className=' overflow-hidden  border-amber-500 mt-7'>
             <p className='text-8xl translate-y-6 sm:text-[230px] sm:translate-y-16 leading-none ml-3 '>ADITYA</p>
-          </div>
+          </div> */}
+          <div className=' overflow-hidden mt-7 relative'>
+          <p
+            className='text-8xl translate-y-6 sm:text-[230px] sm:translate-y-16 leading-none ml-3 relative inline-block'
+            style={{
+              color: '#c4b5fd',
+              textShadow: `
+                0 0 80px #7c3aed,
+                0 0 160px #4f29cd88,
+                0 0 40px #a78bfa
+              `
+            }}
+          >
+            ADITYA
+          </p>
+        </div>
         </div>
     </div>
   )

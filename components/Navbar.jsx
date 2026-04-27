@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
   return ( 
-      <div className={`w-full h-17 md:h-20 fixed top-0 z-30 p-5 sm:p-9 sm:px-16 border border-blue ${isDark ? 'bg-[#1C1917]' : 'white'}`}  >
+      <div className={`w-full  h-17 md:h-20 fixed top-0 z-30 p-5 sm:p-9 sm:px-16  ${isDark ? 'bg-[#1C1917]' : 'bg-[#f1f2f6]'}`}  >
         <div className='flex '>
             <div className='flex font-semibold px-9 text-xl sm:ml-12 md:ml-[10vw]  hover:-skew-x-12 hover:text-orange-400 cursor-pointer'>
               <p className='   '>i am</p>
